@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Shape - Creative Designer</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Mr_Cloud</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-subtitle">Senior Cloud Solution Architect & Trainer</div>
+            <h1>Master Azure & AWS With Real-World Client level Exposure Training</h1>
+            <p class="subtitle">Most Affordable, hands-on cloud training designed for aspiring Azure Administrators, AWS Architects, and DevOps Engineers. Free Books, Free PPT, Free Guidance and Free Demo</p>
+            <a href="#portfolio" class="cta-button">View Courses</a>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView()"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left"></div>
+                <div class="about-text slide-in-right">
+                    <h3>Providing exceptionally affordable, 10x cheaper, industry exposured high-quality cloud learning resources to help you grow and evolve into a real-world, industry-ready engineer.</h3>
+                    <p>I specialize in training students in Microsoft Azure and Amazon Web Services with real-world implementation experience. I provide brilliant study material such as consolidated ppt's, expensive books for free and pre recorded video classes, deployment strategies, and interview preparation.</p>
+                    <p>Helped more than 1500 friends acroos the globe, Unlike theory-based programs my approach emphasizes practical cloud projects such as VM deployment, VNet configuration, IAM management, load balancing, infrastructure automation using Terraform, and configuration management using Ansible.</p>
+                    <p>My goal is simple — make high-quality cloud education accessible at an affordable price without compromising depth or industry relevance..</p>
+                    <div class="skills">
+                        <span class="skill-tag">Azure Architect</span>
+			<span class="skill-tag">AWS Sysops</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Courses Offered</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image azure-bg">
+        		   <span class="card-title">AZURE</span>
+    			</div>
+                    <div class="portfolio-content">
+                        <h4>Azure Administrator (AZ-104)</h4>
+                        <p>Complete hands-on training covering Azure Virtual Machines, Storage, Networking, Identity, RBAC, and Monitoring. Includes real deployment labs and exam-oriented guidance.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Azure AZ-104</span>
+                            <span class="tech-tag">Azure AZ-305</span>
+                            <span class="tech-tag">AZ-900 & Infra Solution</span>
+                            <span class="tech-tag">Networking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image aws-bg">
+        		  <span class="card-title">AWS</span>
+    			</div>
+                    <div class="portfolio-content">
+                        <h4>AWS Solutions Architect</h4>
+                        <p>Learn AWS architecture design including EC2, S3, IAM, VPC, Load Balancers, Auto Scaling and CloudFormation, Focus on real-world deployment scenarios.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">AWS Admin</span>
+                            <span class="tech-tag">AWS Architect</span>
+                            <span class="tech-tag">VPC</span>
+                            <span class="tech-tag">S3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image tf-bg">
+      			  <span class="card-title">TERRAFORM</span>
+    			</div>
+                    <div class="portfolio-content">
+                        <h4>Terraform & Infrastructure as Code</h4>
+			<p>Automate cloud infrastructure using Terraform with real project implementation across AWS and Azure environments.</p>
+			<div class="portfolio-tech">
+    			    <span class="tech-tag">Terraform</span>
+    			    <span class="tech-tag">State File</span>
+    			    <span class="tech-tag">Modules</span>
+    			    <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-floating-shapes">
+            <div class="contact-shape contact-shape-1"></div>
+            <div class="contact-shape contact-shape-2"></div>
+            <div class="contact-shape contact-shape-3"></div>
+            <div class="contact-shape contact-shape-4"></div>
+            <div class="contact-shape contact-shape-5"></div>
+            <div class="contact-shape contact-shape-6"></div>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title fade-in">Interested? Enquire Now</h2>
+                <p class="fade-in"> Hit the "Message Me" button to connect with one of our agent directly via Telegram. Limited size and Limited material for better practical guidance. Start your journey today, God bless you all</p>
+		<div class="fade-in" style="margin-top: 40px;">
+    		<a href="https://t.me/The_MR_Cloud" target="_blank" class="telegram-btn">
+    		    Message Me
+  		  </a>
+		</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy;2026 MR_Cloud | Cloud Training Platform.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                    <a href="#sitemap">Sitemap</a>
+                    <a href="https://t.me/The_MR_Cloud" target="_blank"</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="website-javascripts.js"></script>
+
+</body>
+</html>
