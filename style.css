@@ -7,6 +7,13 @@
             box-sizing: border-box;
         }
 
+	html {
+    		font-size: 16px;
+	}
+	* {
+ 	   -webkit-text-size-adjust: 100%;
+		}
+
         /* Footer */
         .footer {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #312e81 100%);
@@ -169,7 +176,7 @@
         }
 
         .nav-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
@@ -492,7 +499,7 @@
 
         .hero h1 {
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-            font-size: 5rem;
+            font-size: clamp(2.5rem, 5vw, 5rem);
             font-weight: 700;
             margin-bottom: 1.5rem;
             opacity: 0;
@@ -589,7 +596,7 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
@@ -1207,13 +1214,8 @@
 .telegram-btn:hover {
     background: #ffffff;
     color: #0088cc;
-    transform: translateY(-4px);
     box-shadow: 0 15px 30px rgba(0, 136, 204, 0.3);
 } 
-
-transition: background 0.45s ease-out, 
-            color 0.45s ease-out, 
-            transform 0.45s ease-out;
 
 .nav-links a:hover {
     color: #800000;   /* Maroon */
