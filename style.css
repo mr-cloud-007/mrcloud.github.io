@@ -1226,7 +1226,7 @@
 }
 .nav-links a {
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .nav-links a:hover {
@@ -1237,3 +1237,4 @@
 .nav-links a:hover::after {
     background: #800000;
 }
+
