@@ -752,19 +752,21 @@
         }
 
         .portfolio-item:hover {
-            transform: translateY(-15px) scale(1.02);
-	    border: 1px solid var(--primary-color);
-            box-shadow: var(--shadow-2xl);
+        	    transform: translateY(-15px) scale(1.02);
+	    	    box-shadow: var(--shadow-2xl);
         }
 
         .portfolio-image {
-  		 height: 180px;
-    		 display: flex;
-   		 align-items: center;
-   		 justify-content: center;
-   		 border-top-left-radius: 20px;
-   		 border-top-right-radius: 20px;
-	}
+  		height: 180px;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		border-top-left-radius: 20px;
+    		border-top-right-radius: 20px;
+   		position: relative;
+    		overflow: hidden;
+    		transition: all 0.4s ease;	
+		}
 
 	.azure-bg {
   	  	background: linear-gradient(135deg, #0078D4, #00A4EF);
@@ -777,6 +779,16 @@
 	.tf-bg {
    		 background: linear-gradient(135deg, #9BD35A, #7FBF3F);
 		}
+
+   	.portfolio-item:hover .portfolio-image {
+    		filter: brightness(1.25);
+		}
+
+		.portfolio-item:hover .portfolio-image::after {
+   			background: rgba(255, 255, 255, 0.15);
+    			backdrop-filter: blur(6px);
+		}	
+		
 
 	.card-title {
    		 font-size: 34px;
@@ -1178,6 +1190,7 @@
                 padding: 0 1rem;
             }
         }
+
 .telegram-btn {
     display: inline-block;
     padding: 15px 40px;
@@ -1187,14 +1200,21 @@
     font-weight: 600;
     border-radius: 50px;
     text-decoration: none;
-    transition: all 0.4s ease;
-    box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+    border: none;                     /* Remove border completely */
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);  /* Faster & smooth */
 }
 
 .telegram-btn:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 136, 204, 0.6);
-}
+    background: #ffffff;
+    color: #0088cc;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 136, 204, 0.3);
+} 
+
+transition: background 0.45s ease-out, 
+            color 0.45s ease-out, 
+            transform 0.45s ease-out;
+
 .nav-links a:hover {
     color: #800000;   /* Maroon */
 }
